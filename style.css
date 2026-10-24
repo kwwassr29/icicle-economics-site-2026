@@ -50,3 +50,33 @@ a:focus-visible, summary:focus-visible, .btn:focus-visible { outline: 3px solid 
 nav ul { display: flex; flex-wrap: wrap; gap: .1rem 1.4rem; margin: 0; padding: 0; list-style: none; }
 nav a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: .88rem; letter-spacing: .04em; padding: .2rem 0; border-bottom: 1px solid transparent; }
 nav a:hover { border-bottom-color: var(--oxide); color: var(--ink); }
+
+/*Место под фото*/
+.ph {
+    position: relative;
+    overflow: hidden;
+    background: 
+        radial-gradient(120% 90% at 20% 0%, rgba(243, 240, 232, .28), trensparent 60%),
+        linear-gradient(145deg, var(--linen), var(--sage));
+}
+.ph::before {
+    content: "Фото · " attr(data-file);
+    position: absolute; 
+    left: 1rem; 
+    bottom: .9rem; 
+    font-size: .78rem;
+    letter-spacing: .12em; 
+    text-transform: uppercase; 
+    color: rgba(41, 42, 38, .55);
+ }
+
+.ph img { 
+    position: absolute; 
+    inset: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+ }
+ 
+.r45 { aspect-ratio: 4 / 5; }
+.r43 { aspect-ratio: 4 / 3; }
