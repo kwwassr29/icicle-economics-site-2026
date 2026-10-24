@@ -387,6 +387,9 @@ abbr {
     line-height: 1.35; 
 }
 
+.note-card { background: var(--sandstone); padding: 1.75rem; border-top: 3px solid var(--oxide); align-self: start; }
+.note-card h3 { margin-top: 0; }
+
 .timeline { 
     list-style: none; 
     padding: 0; 
