@@ -598,5 +598,72 @@ details[open] summary { margin-bottom: .5rem; }
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
+/* ---------- Подвал ---------- */
+.site-footer { background: var(--ink); color: var(--sandstone); padding-top: 3rem; }
+.foot { 
+    display: grid; 
+    gap: .75rem; 
+    padding-bottom: 2rem; 
+    border-bottom: 1px solid rgba(243, 240, 232, .2); 
+}
+.foot p { margin: 0; }
+.site-footer .wordmark { color: var(--porcelain); }
+.topics, .cities { 
+    text-transform: uppercase; 
+    letter-spacing: .2em; 
+    font-size: .78rem; 
+}
+.legal { 
+    margin: 0; 
+    padding: 1.25rem 1.25rem 1.75rem; 
+    text-align: center; 
+}
+.site-footer small { color: var(--sage); }
+
+/* ---------- Адаптивность ---------- */
+@media (min-width: 760px) {
+  .split { grid-template-columns: 1.4fr 1fr; }
+  .products { grid-template-columns: repeat(3, 1fr); gap: 2rem 1.5rem; }
+  .band { grid-template-columns: 1fr 1fr; }
+  .band .ph { aspect-ratio: auto; min-height: 380px; }
+  .duo { grid-template-columns: 1fr 1fr; }
+  .two { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .swot { grid-template-columns: 1fr 1fr; }
+  .foot { grid-template-columns: 1fr 1fr 1fr; align-items: center; }
+  .cities { text-align: right; }
+  .topics { text-align: center; }
+}
+
+
+@media (min-width: 1000px) {
+  .block .wrap { grid-template-columns: repeat(2, 1fr); align-items: start; }
+  .sec-head, .split, .pull, .products, .band, .duo, .story.wide, .eco.wide { grid-column: 1 / -1; }
+  #brand .wrap, #products .wrap { grid-template-columns: repeat(2, 1fr); }
+  .timeline { grid-template-columns: repeat(6, 1fr); border-left: 0; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+  .timeline li { padding: 0 1rem 0 0; }
+  .timeline li::before { left: 0; top: -1.85rem; }
+  .swot { grid-template-columns: repeat(4, 1fr); }
+}
+
+
+@media (max-width: 560px) {
+  body { font-size: 1rem; }
+  .wrap { width: calc(100% - 2rem); }
+  .topbar { flex-direction: column; align-items: flex-start; }
+  nav ul { gap: .1rem 1rem; }
+  .products { grid-template-columns: repeat(2, 1fr); gap: 1.25rem .75rem; }
+  .product p:last-child { display: none; }
+  .cover-inner { flex-direction: column; align-items: flex-start; }
+  .cover-tags { text-align: left; display: flex; gap: 1rem; }
+  .bar { display: grid; grid-template-columns: 4rem 1fr 3.5rem; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .product .ph { transition: none; }
+  .product:hover .ph { transform: none; }
+}
+
 
 
