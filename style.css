@@ -513,6 +513,15 @@ var {
     font-family: var(--serif); 
 }
 
+.table-scroll { overflow-x: auto; margin: 1rem 0 .5rem; }
+table { border-collapse: collapse; width: 100%; min-width: 320px; }
+caption { text-align: left; font-size: .85rem; padding-bottom: .6rem; color: var(--muted); caption-side: top; }
+.ink caption { color: var(--sage); }
+th, td { padding: .7rem .9rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ink th, .ink td { border-bottom-color: rgba(243, 240, 232, .2); }
+thead th { font-size: .85rem; letter-spacing: .04em; font-weight: 600; border-bottom: 2px solid currentColor; }
+tbody th { font-weight: 600; }
+
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
