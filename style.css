@@ -386,3 +386,75 @@ abbr {
     font-size: clamp(1.35rem, 1.4vw + 1rem, 2rem); 
     line-height: 1.35; 
 }
+
+.timeline { 
+    list-style: none; 
+    padding: 0; 
+    margin: 1rem 0 0; 
+    display: grid; 
+    gap: 1rem; 
+    border-left: 1px solid var(--line); 
+}
+.timeline li { 
+    padding-left: 1.5rem; 
+    position: relative; 
+    margin: 0; 
+}
+.timeline li::before { 
+    content: ""; 
+    position: absolute; 
+    left: -5px; 
+    top: .65rem; 
+    width: 9px; 
+    height: 9px; 
+    background: var(--oxide); 
+    border-radius: 50%; 
+}
+.timeline time { 
+    font-family: var(--serif); 
+    font-size: 1.5rem; 
+    display: block; 
+}
+.timeline p { 
+    margin: 0; 
+    color: var(--muted); 
+}
+/* ---------- Продукты ---------- */
+.products { list-style: none; 
+    padding: 0; 
+    margin: 1.5rem 0 0; 
+    display: grid; 
+    gap: 1.5rem 1.25rem; 
+    grid-template-columns: repeat(2, 1fr); 
+}
+.products li { margin: 0; }
+.product .ph { 
+    margin-bottom: .9rem; 
+    transition: transform .35s; 
+}
+.product:hover .ph { transform: scale(1.015); }
+.product .cat { 
+    margin: 0; 
+    font-size: .78rem; 
+    letter-spacing: .2em; 
+    color: var(--oxide); 
+}
+.product h4 { 
+    margin: .15rem 0 .35rem; 
+    font-family: var(--serif); 
+    font-size: 1.35rem; 
+    font-weight: 500; 
+    letter-spacing: 0; 
+    text-transform: none; 
+    color: var(--ink); 
+}
+.product p:last-child { 
+    font-size: .95rem; 
+    color: var(--muted); 
+    margin: 0; 
+}
+.story.wide, .eco.wide { grid-column: 1 / -1; }
+address { font-style: normal; margin-bottom: 1rem; }
+
+
+
