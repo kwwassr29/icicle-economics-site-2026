@@ -569,6 +569,23 @@ thead th {
 }
 tbody th { font-weight: 600; }
 
+details { 
+    border-top: 1px solid var(--line); 
+    border-bottom: 1px solid var(--line); 
+    padding: .8rem 0; 
+    margin: 1rem 0; 
+}
+.ink details { border-color: rgba(243, 240, 232, .22); }
+summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: .5rem; }
+
+.two, .swot { display: grid; gap: 1.25rem; }
+.swot section { 
+    background: var(--porcelain); 
+    padding: 1.25rem 1.5rem; 
+}
+.swot h4 { margin-top: 0; }
+
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
