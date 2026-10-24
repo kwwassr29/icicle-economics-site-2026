@@ -312,3 +312,43 @@ h5 {
     font-size: 1.15rem; 
     color: var(--sandstone); 
 }
+
+p { margin: 0 0 1rem; }
+ul, ol { 
+    padding-left: 1.2rem; 
+    margin: 0 0 1rem; 
+}
+li { 
+    margin-bottom: .3rem; 
+}
+li::marker { 
+    color: var(--oxide); 
+}
+.ink li::marker { 
+    color: var(--linen); 
+}
+small { 
+    color: var(--muted); 
+}
+mark { 
+    background: linear-gradient(transparent 58%, rgba(181, 161, 138, .6) 58%); 
+    color: inherit; 
+    padding: 0 .1em; 
+}
+rt { 
+    font-size: .5em; 
+    color: var(--oxide); 
+}
+abbr { 
+    text-decoration: underline dotted; 
+}
+/* ---------- Журнальные элементы ---------- */
+.split { 
+    display: grid; 
+    gap: clamp(1.5rem, 4vw, 3rem); 
+    align-items: start; 
+}
+.lede { 
+    font-size: 1.2rem; 
+    line-height: 1.65; 
+}
