@@ -1,0 +1,44 @@
+/* ICICLE — журнальная версия. Палитра: Porcelain, Sandstone, Sage, Ink, Raw Linen, Oxide */
+:root {
+    --porcelain: #f3f0e8;
+    --sandstone: #d8d0c2;
+    --sage: #8dd0c2;
+    --ink: #292a26;
+  --linen: #b5a18a;
+  --oxide: #70483f;
+  --muted: #5a5b53;
+  --line: rgba(41, 42, 38, .16);
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--ink);
+    background: var(--porcelain);
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+[hidden] {display: none !important; }
+a {
+    color: var(--oxide); 
+    font-weight: 600;
+    text-underline-offset: 4px;
+}
+a:hover { color: var(--ink); }
+a:focus-visible, summary:focus-visible, .btn:focus-visible { outline: 3px solid var(--oxide); outline-offset: 3px; }
+
+.wrap { width: min(1180px, 100% - 2.5rem); margin-inline: auto; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: #fff; padding: .5rem 1rem; z-index: 50; }
