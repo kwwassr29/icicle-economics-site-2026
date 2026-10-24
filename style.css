@@ -586,6 +586,15 @@ details[open] summary { margin-bottom: .5rem; }
 }
 .swot h4 { margin-top: 0; }
 
+.duo { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: grid; 
+    gap: 1.25rem; 
+}
+.duo li { margin: 0; }
+
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
