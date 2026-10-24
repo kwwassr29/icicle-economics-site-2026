@@ -352,3 +352,18 @@ abbr {
     font-size: 1.2rem; 
     line-height: 1.65; 
 }
+.values { margin: 1rem 0 0; 
+    padding: 1rem 1.25rem; 
+    background: var(--sandstone); 
+}
+.values dt { 
+    font-weight: 600; 
+    margin-top: .6rem; 
+}
+.values dt:first-child { 
+    margin-top: 0; 
+}
+.values dd { 
+    margin: 0; 
+    color: var(--muted); 
+}
