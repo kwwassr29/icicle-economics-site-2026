@@ -375,3 +375,14 @@ abbr {
     margin-top: .6rem; 
     color: var(--muted); 
 }
+.pull { 
+    border-left: 3px solid var(--oxide); 
+    padding: .25rem 0 .25rem 1.5rem; 
+    max-width: 62ch; 
+}
+.pull p { 
+    margin: 0;
+    font-family: var(--serif); 
+    font-size: clamp(1.35rem, 1.4vw + 1rem, 2rem); 
+    line-height: 1.35; 
+}
