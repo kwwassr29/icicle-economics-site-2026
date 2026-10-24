@@ -453,6 +453,40 @@ abbr {
     color: var(--muted); 
     margin: 0; 
 }
+
+.band { display: grid; 
+    background: var(--ink); 
+    color: var(--porcelain); 
+}
+.band-text { 
+    padding: clamp(1.5rem, 4vw, 3rem); 
+    align-self: center; 
+}
+.band-text h3 { 
+    font-size: clamp(1.7rem, 2vw + 1rem, 2.6rem); 
+    max-width: 16ch; 
+}
+.swatches { 
+    list-style: none; 
+    padding: 0; 
+    margin: 1.25rem 0 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: .5rem; 
+}
+.swatches li { 
+    margin: 0; 
+    padding: .35rem .9rem; 
+    font-size: .88rem; 
+    letter-spacing: .06em; 
+    color: var(--ink); 
+}
+.sw1 { background: var(--porcelain); }
+.sw2 { background: var(--sandstone); }
+.sw3 { background: var(--linen); }
+.sw4 { background: var(--sage); }
+.sw5 { background: #e9e2d3; }
+
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
