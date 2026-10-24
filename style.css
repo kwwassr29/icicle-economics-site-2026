@@ -490,6 +490,29 @@ abbr {
 .sw4 { background: var(--sage); }
 .sw5 { background: #e9e2d3; }
 
+/* ---------- Экономика ---------- */
+.eco { 
+    border-top: 1px solid rgba(243, 240, 232, .22); 
+    padding-top: 1.5rem; 
+}
+.eco h3 { color: var(--porcelain); }
+.eco a { color: var(--sandstone); }
+.eco .calc { 
+    padding: 1rem 1.25rem; 
+    background: rgba(243, 240, 232, .08); 
+    border-left: 3px solid var(--linen); 
+    margin-top: 1rem; 
+}
+.formula { 
+    font-family: var(--serif); 
+    font-size: 1.25rem; 
+    padding: 1rem 0; 
+}
+var { 
+    font-style: italic; 
+    font-family: var(--serif); 
+}
+
 .story.wide, .eco.wide { grid-column: 1 / -1; }
 address { font-style: normal; margin-bottom: 1rem; }
 
